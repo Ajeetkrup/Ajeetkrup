@@ -78,13 +78,6 @@ Currently focused on cloud-native technologies, Kubernetes orchestration, and in
 - **Architecture**: Microservices, event-driven architecture, scalable system design
 - **Performance**: Application optimization, caching strategies, load balancing
 
-## 🌱 Currently Learning:
-- Advanced Kubernetes patterns and operators
-- Service mesh technologies (Istio)
-- GitOps workflows and ArgoCD
-- Advanced AWS services and certification paths
-- Site Reliability Engineering (SRE) practices
-
 ## 📝 Recent Achievements:
 - ✅ Completed cloud-native application deployment with full observability
 - ✅ Implemented automated CI/CD pipelines with security scanning
