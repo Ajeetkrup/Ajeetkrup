@@ -45,12 +45,6 @@ Currently working at InnovationM, where I develop AI-powered chatbots, RAG-based
 - **Enterprise TaskFlow Management**: Microservices-based platform handling 1,000+ concurrent users with React.js frontend and real-time updates
 - **ATS Recruitment Dashboard**: Advanced platform with real-time analytics processing 10,000+ data points daily, serving 500+ users
 
-## 🚀 Impact Metrics:
-- **40% faster response times** through AI optimization and intelligent caching
-- **95% user satisfaction** via AI-powered chatbots and improved UX
-- **90% accuracy** in document analysis and NLP tasks
-- **30% performance improvement** through LLM fine-tuning techniques
-
 # 📊 GitHub Statistics:
 
 <div align="center">
@@ -102,7 +96,7 @@ Currently working at InnovationM, where I develop AI-powered chatbots, RAG-based
 # 💼 Professional Experience:
 
 ## 📚 IBM Generative AI Engineering Professional Certificate
-**IBM & Coursera** | September 2024 - October 2024
+**IBM & Coursera** | September 2025 - October 2025
 
 Completed intensive professional certification covering ML foundations, deep learning, transformers, LLMs, and production AI systems.
 
@@ -120,7 +114,7 @@ Leading AI integration projects while building production-ready generative AI so
 
 **Key Achievements:**
 - ✅ Launched 3 AI-powered voice chatbots reducing response times by 40%
-- ✅ Built Face Detection system using MediaPipe ML models with 95% accuracy
+- ✅ Built Face Detection system using MediaPipe ML models
 - ✅ Developed RAG-based document analysis tools handling 50+ documents
 - ✅ Implemented prompt engineering strategies optimizing LLM performance by 30%
 - ✅ Created AI-powered interfaces handling 200+ daily queries with high satisfaction
@@ -141,18 +135,18 @@ Developed scalable web applications and integrated ML capabilities. Built data p
 
 ## 🏅 Featured Certification:
 **IBM Generative AI Engineering Professional Certificate**  
-*IBM & Coursera | October 2024*
+*IBM & Coursera | October 2025*
 
 **Skills Covered:** Transformers • LLMs • RAG Systems • Fine-tuning • LangChain • PyTorch • PEFT • AI Agents • Prompt Engineering
 
 ## 📜 Specialized Certifications:
-- ✅ **Generative AI Language Modeling with Transformers** - IBM (2024)
+- ✅ **Generative AI Language Modeling with Transformers** - IBM (2025)
   - Skills: BERT, GPT, T5, Attention Mechanisms, Transfer Learning
   
-- ✅ **Fundamentals of AI Agents Using RAG and LangChain** - IBM (2024)
+- ✅ **Fundamentals of AI Agents Using RAG and LangChain** - IBM (2025)
   - Skills: LangChain, Vector Databases, Semantic Search, AI Agents
   
-- ✅ **Generative AI Advance Fine-Tuning for LLMs** - IBM (2024)
+- ✅ **Generative AI Advance Fine-Tuning for LLMs** - IBM (2025)
   - Skills: PEFT, LoRA, QLoRA, Model Optimization, Custom Training
 
 ## 📈 Professional Impact:
@@ -197,7 +191,7 @@ Integrate AI models into existing applications with REST APIs, FastAPI, Docker d
 
 # 📊 Current Stats:
 
-- 🚀 **10+ AI Projects** delivered in production
+- 🚀 **25+ AI Projects** delivered in production
 - 👥 **500+ Daily Users** served by my applications
 - ⚡ **40% Performance Boost** through AI optimization
 - 🎯 **95% Accuracy Rate** in ML models and AI systems
