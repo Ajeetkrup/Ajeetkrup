@@ -1,51 +1,55 @@
-# 💻 Frontend Developer | React.js Specialist
+# 🤖 Generative AI Engineer | LLM Specialist
 
-**2+ Years of Experience** | Building high-performance web applications with modern JavaScript frameworks
+**2+ Years of Experience** | IBM Certified GenAI Engineer | Building Production-Ready AI Solutions
 
-I'm a passionate Frontend Developer with 2+ years of experience creating scalable React.js applications that serve 500+ users daily. I specialize in building responsive, user-centric interfaces with a focus on performance optimization and seamless user experiences. My expertise spans the complete frontend ecosystem - from modern React applications to performance optimization, resulting in 40% faster render times and 70% user engagement increases.
+I'm a passionate Generative AI Engineer with 2+ years of software development experience, recently certified by IBM's GenAI Engineering program. I specialize in building intelligent AI applications with RAG systems, LLM fine-tuning, and prompt engineering. My expertise spans the complete AI/ML ecosystem - from transformer models to production deployment, resulting in 40% faster response times and 95% user satisfaction.
 
-Currently working at InnovationM, where I develop enterprise applications and AI-powered interfaces while maintaining strong backend integration capabilities and cloud deployment knowledge.
+Currently working at InnovationM, where I develop AI-powered chatbots, RAG-based document analysis systems, and NLP solutions while maintaining strong full-stack development capabilities and cloud deployment knowledge.
 
 ## 🌐 Connect With Me:
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ajeet-kumar-upadhyay) 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ajeet-kumar-upadhyay)
+[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/Ajeetkrup)
+[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=twitter&logoColor=white)](https://x.com/ajeetkrup401)
 
-# 🚀 Tech Stack:
+# 🚀 AI Technology Stack:
 
-## ⚡ Frontend Technologies:
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+## 🤖 Core AI/ML Technologies:
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 
-## 🎨 Styling & Design:
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+## 🧠 GenAI & LLM Tools:
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white) ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white) ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 
-## 🔧 Development Tools:
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black) ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) ![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white)
+## 🔧 Development & Deployment:
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 
-## 🧪 Testing & Quality:
-![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white) ![Testing-Library](https://img.shields.io/badge/-TestingLibrary-%23E33332?style=for-the-badge&logo=testing-library&logoColor=white) ![Storybook](https://img.shields.io/badge/-Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white)
+## 💻 Full-Stack Development:
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 
-## 🛠️ Backend Integration:
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+## 🎨 Frontend & Styling:
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white) ![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
 
-## ☁️ Deployment & DevOps:
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
+## 🔧 Version Control & Tools:
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-%23F37626.svg?style=for-the-badge&logo=Jupyter&logoColor=white) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 
-## 🔧 Version Control & Collaboration:
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+# 🏆 Featured GenAI Projects:
 
-# 🏆 Featured Projects:
+## 🤖 AI-Powered Solutions:
+- **AI Voice Chatbots for HR**: Built 3 production-ready chatbots using LangChain and OpenAI GPT-4 with RAG architecture, reducing response times by 40% while handling 200+ daily queries with 95% user satisfaction
+- **Intelligent Document Q&A System**: RAG-based document analysis using LangChain and FAISS, processing 50+ documents with 90% accuracy and real-time response generation
+- **Custom LLM Fine-tuning Pipeline**: End-to-end pipeline for fine-tuning transformers with PEFT techniques, achieving 30% performance improvement on domain-specific tasks
+- **Sentiment Analysis NLP Engine**: Multi-class sentiment classifier using BERT with 92% accuracy, analyzing 10,000+ texts with multi-language support
 
-## 💼 Enterprise Applications:
-- **TaskFlow Management System**: Microservices-based task management with React.js frontend, handling 1,000+ concurrent users
-- **ATS Dashboard**: Advanced recruitment platform with real-time analytics processing 10,000+ data points daily
-- **Onmove Logistics Platform**: Transportation management system serving 500+ daily shipments
-- **Face Detection Chrome Extension**: AI-powered extension using MediaPipe API with 95% accuracy
+## 💻 Full-Stack & ML Projects:
+- **Face Detection Chrome Extension**: Real-time facial recognition using MediaPipe ML models with 95% accuracy, processing 50+ requests/second
+- **Enterprise TaskFlow Management**: Microservices-based platform handling 1,000+ concurrent users with React.js frontend and real-time updates
+- **ATS Recruitment Dashboard**: Advanced platform with real-time analytics processing 10,000+ data points daily, serving 500+ users
 
-## 🚀 Performance Highlights:
-- **40% faster render times** through intelligent caching and optimization
-- **70% increase in user engagement** via UI/UX improvements
-- **30% improvement in page load speeds** across enterprise applications
-- **99.8% cross-browser compatibility** across 5 major browsers
+## 🚀 Impact Metrics:
+- **40% faster response times** through AI optimization and intelligent caching
+- **95% user satisfaction** via AI-powered chatbots and improved UX
+- **90% accuracy** in document analysis and NLP tasks
+- **30% performance improvement** through LLM fine-tuning techniques
 
 # 📊 GitHub Statistics:
 
@@ -69,60 +73,154 @@ Currently working at InnovationM, where I develop enterprise applications and AI
 
 # 🎯 Core Expertise:
 
-### 💻 Frontend Development:
-- **React Ecosystem**: Advanced React.js, Next.js, React Router, Context API, Custom Hooks
-- **State Management**: Redux Toolkit, Zustand, React Query for server state
-- **TypeScript**: Strong typing, interfaces, generics, and advanced TS patterns
-- **Performance**: Code splitting, lazy loading, memoization, bundle optimization
-- **UI/UX**: Responsive design, accessibility (a11y), micro-interactions, design systems
+### 🤖 Generative AI & LLMs:
+- **LLM Development**: Fine-tuning transformer models (BERT, GPT, T5) with PEFT techniques (LoRA, QLoRA)
+- **RAG Systems**: Building retrieval-augmented generation systems with LangChain, FAISS, Pinecone, ChromaDB
+- **Prompt Engineering**: Advanced prompting strategies for optimal LLM performance and accuracy
+- **AI Agents**: Developing autonomous AI agents with LangChain for complex task automation
+- **Model Deployment**: Production deployment of AI models with FastAPI, Docker, and cloud platforms
 
-### 🎨 Styling & Design:
-- **CSS Mastery**: Advanced CSS3, Flexbox, Grid, animations, transitions
-- **Framework Proficiency**: Tailwind CSS, SASS/SCSS, styled-components
-- **Design Systems**: Component libraries, consistent design patterns
-- **Responsive Design**: Mobile-first approach, cross-device compatibility
+### 🧠 NLP & Machine Learning:
+- **Natural Language Processing**: Text classification, sentiment analysis, named entity recognition
+- **Deep Learning**: PyTorch, TensorFlow, custom neural network architectures
+- **Transformer Models**: Hands-on experience with Hugging Face Transformers library
+- **Vector Databases**: Semantic search implementation with embedding models
+- **Model Optimization**: Quantization, pruning, and efficient inference strategies
 
-### 🧪 Quality Assurance:
-- **Testing**: Jest, React Testing Library, E2E testing with Cypress
-- **Code Quality**: ESLint, Prettier, SonarQube integration
-- **Performance Monitoring**: Web Vitals, Lighthouse optimization
-- **Cross-browser Testing**: Ensuring consistent experience across platforms
+### 💻 Full-Stack Development:
+- **Frontend**: React.js, Next.js, TypeScript, Redux, responsive design, performance optimization
+- **Backend**: Node.js, Express.js, RESTful APIs, GraphQL, microservices architecture
+- **Databases**: MongoDB, PostgreSQL, vector databases for AI applications
+- **DevOps**: Docker, Kubernetes, AWS, CI/CD pipelines, automated testing
 
 ### 🔗 Integration & Deployment:
-- **API Integration**: RESTful APIs, GraphQL, real-time WebSocket connections
-- **CI/CD**: GitHub Actions, automated testing and deployment pipelines
-- **Cloud Deployment**: AWS EC2/S3, Vercel, Netlify with CDN optimization
-- **Containerization**: Docker for consistent development environments
+- **API Integration**: OpenAI API, Anthropic Claude, custom ML model APIs
+- **Cloud Services**: AWS EC2/S3, Vercel, Netlify with CDN optimization
+- **Monitoring**: Performance tracking, logging, error handling for production AI systems
+- **Security**: API key management, rate limiting, data privacy best practices
+
+# 💼 Professional Experience:
+
+## 📚 IBM Generative AI Engineering Professional Certificate
+**IBM & Coursera** | September 2024 - October 2024
+
+Completed intensive professional certification covering ML foundations, deep learning, transformers, LLMs, and production AI systems.
+
+**Key Achievements:**
+- ✅ Mastered transformer architectures: BERT, GPT, T5, and fine-tuning techniques
+- ✅ Built RAG systems using LangChain and vector databases (FAISS, Pinecone)
+- ✅ Implemented PEFT techniques (LoRA, QLoRA) for efficient model customization
+- ✅ Developed AI agents and production-ready chatbots with deployment strategies
+- ✅ Completed 10+ hands-on projects demonstrating real-world AI applications
+
+## 💼 Software Engineer (Transitioning to GenAI)
+**InnovationM, Noida** | March 2024 - Present
+
+Leading AI integration projects while building production-ready generative AI solutions. Bridging full-stack development with AI/ML implementation for enterprise clients.
+
+**Key Achievements:**
+- ✅ Launched 3 AI-powered voice chatbots reducing response times by 40%
+- ✅ Built Face Detection system using MediaPipe ML models with 95% accuracy
+- ✅ Developed RAG-based document analysis tools handling 50+ documents
+- ✅ Implemented prompt engineering strategies optimizing LLM performance by 30%
+- ✅ Created AI-powered interfaces handling 200+ daily queries with high satisfaction
+
+## 🚀 Full Stack Developer
+**Klimb, Remote** | May 2023 - March 2024
+
+Developed scalable web applications and integrated ML capabilities. Built data pipelines and analytics systems processing large-scale data for recruitment platform.
+
+**Key Achievements:**
+- ✅ Scaled platform to 500+ users with microservices architecture
+- ✅ Built real-time analytics dashboards processing 10,000+ data points daily
+- ✅ Reduced API response times from 800ms to 250ms (70% improvement)
+- ✅ Delivered 15+ features with 98% sprint completion rate and 99.9% uptime
+- ✅ Integrated payment systems processing 2,000+ monthly transactions
+
+# 🎓 Certifications & Training:
+
+## 🏅 Featured Certification:
+**IBM Generative AI Engineering Professional Certificate**  
+*IBM & Coursera | October 2024*
+
+**Skills Covered:** Transformers • LLMs • RAG Systems • Fine-tuning • LangChain • PyTorch • PEFT • AI Agents • Prompt Engineering
+
+## 📜 Specialized Certifications:
+- ✅ **Generative AI Language Modeling with Transformers** - IBM (2024)
+  - Skills: BERT, GPT, T5, Attention Mechanisms, Transfer Learning
+  
+- ✅ **Fundamentals of AI Agents Using RAG and LangChain** - IBM (2024)
+  - Skills: LangChain, Vector Databases, Semantic Search, AI Agents
+  
+- ✅ **Generative AI Advance Fine-Tuning for LLMs** - IBM (2024)
+  - Skills: PEFT, LoRA, QLoRA, Model Optimization, Custom Training
 
 ## 📈 Professional Impact:
 
 ### At InnovationM (Current):
-- ✅ Built 3 enterprise applications serving 500+ daily users
-- ✅ Developed AI-powered interfaces handling 200+ daily queries
-- ✅ Created Chrome extension processing 50+ requests/second
-- ✅ Achieved 25% reduction in support tickets through better UX
+- ✅ Built 3 AI-powered chatbots serving 200+ daily queries
+- ✅ Developed RAG systems with 90% accuracy for document analysis
+- ✅ Created ML-powered Chrome extension with 95% accuracy
+- ✅ Achieved 40% performance improvement through AI optimization
 
 ### At Klimb (Previous):
 - ✅ Scaled recruitment platform to 500+ users
-- ✅ Reduced API response times from 800ms to 250ms
-- ✅ Integrated payment systems processing 2,000+ monthly transactions
+- ✅ Reduced API response times by 70% (from 800ms to 250ms)
+- ✅ Processed 10,000+ data points daily with real-time analytics
 - ✅ Maintained 99.9% uptime during 3x traffic spikes
 
-## 🎓 Education & Certifications:
+# 🎓 Education:
 
-**B.Tech Computer Science Engineering** - I.K. Gujral Punjab Technical University (2019-2023)  
+**B.Tech Computer Science Engineering**  
+I.K. Gujral Punjab Technical University (2019-2023)  
 **CGPA: 8.67/10.0**
 
-**Certifications:**
-- ✅ Frontend Development Specialist
-- ✅ Backend Node.js Integration
+# 💡 What I Can Build For You:
 
-## 📝 Latest Blog Posts:
-<!-- BLOG-POST-LIST:START -->
-- Coming Soon: React Performance Optimization Tips
-- Coming Soon: Building Scalable Component Libraries
-- Coming Soon: Modern CSS Techniques for 2025
-<!-- BLOG-POST-LIST:END -->
+### 🤖 AI Chatbots & Agents
+Custom conversational AI with RAG for context-aware responses, voice integration, and multi-language support using LangChain and OpenAI
+
+### 🔍 RAG Systems
+Intelligent document search and Q&A systems using vector databases (FAISS, Pinecone, ChromaDB) and semantic search
+
+### ⚡ LLM Fine-tuning
+Custom model training with PEFT techniques (LoRA, QLoRA) for domain-specific applications and performance optimization
+
+### 📝 NLP Solutions
+Text analysis, sentiment analysis, named entity recognition, text classification using BERT and transformers
+
+### 🎯 Prompt Engineering
+Optimized prompts for better LLM outputs, chain-of-thought reasoning, and few-shot learning strategies
+
+### 🔗 ML Integration
+Integrate AI models into existing applications with REST APIs, FastAPI, Docker deployment, and cloud hosting
+
+# 📊 Current Stats:
+
+- 🚀 **10+ AI Projects** delivered in production
+- 👥 **500+ Daily Users** served by my applications
+- ⚡ **40% Performance Boost** through AI optimization
+- 🎯 **95% Accuracy Rate** in ML models and AI systems
+- 📚 **IBM Certified** GenAI Engineering Professional
+- 💼 **2+ Years** of software development experience
+
+# 📫 Let's Collaborate:
+
+I'm actively seeking **freelance opportunities** and **full-time positions** in Generative AI Engineering. Whether you need an AI chatbot, RAG system, LLM fine-tuning, or custom NLP solution, I'm here to help bring your vision to life.
+
+### Why Work With Me:
+- 🎯 **IBM Certified GenAI Engineer** with real-world project experience
+- 💼 **Competitive rates** with high-quality deliverables
+- ⚡ **Full attention** to your project with clear communication
+- 🚀 **Production-ready solutions** deployed on cloud platforms
+- 📈 **Proven track record** of delivering impactful AI projects
+
+### 📧 Contact Information:
+- **Email**: ajeetkrup401@gmail.com
+- **LinkedIn**: [linkedin.com/in/ajeet-kumar-upadhyay](https://linkedin.com/in/ajeet-kumar-upadhyay)
+- **GitHub**: [github.com/Ajeetkrup](https://github.com/Ajeetkrup)
+- **Twitter**: [@ajeetkrup401](https://x.com/ajeetkrup401)
+- **Phone**: +91 9123185335
 
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=react)
@@ -131,9 +229,9 @@ Currently working at InnovationM, where I develop enterprise applications and AI
 
 <div align="center">
 
-**💡 "Building the future, one component at a time."**
+**💡 "Building intelligent AI solutions, one model at a time."**
 
-**Currently open to exciting frontend opportunities and collaborations!**
+**🟢 Currently Available for Freelance & Full-time Opportunities!**
 
 [![](https://visitcount.itsvg.in/api?id=ajeetkrup&icon=2&color=6)](https://visitcount.itsvg.in)
 
