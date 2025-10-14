@@ -105,7 +105,7 @@ Completed intensive professional certification covering ML foundations, deep lea
 - ✅ Built RAG systems using LangChain and vector databases (FAISS, Pinecone)
 - ✅ Implemented PEFT techniques (LoRA, QLoRA) for efficient model customization
 - ✅ Developed AI agents and production-ready chatbots with deployment strategies
-- ✅ Completed 10+ hands-on projects demonstrating real-world AI applications
+- ✅ Completed 25+ hands-on projects demonstrating real-world AI applications
 
 ## 💼 Software Engineer (Transitioning to GenAI)
 **InnovationM, Noida** | March 2024 - Present
