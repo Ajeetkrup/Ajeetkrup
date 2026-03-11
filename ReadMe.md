@@ -24,7 +24,7 @@ Currently at **InnovationM**, I build real-time AI interview engines, voice chat
 🏢  Software Engineer @ InnovationM, Noida
 🤖  Building: Multi-Agent Systems · RAG Pipelines · Real-time AI Interfaces
 🎓  IBM Certified Generative AI Engineering Professional
-📍  Noida, India  |  Open to full-time opportunities
+📍  Noida, India  |  Open to remote & full-time opportunities
 ```
 
 ---
@@ -59,18 +59,22 @@ Currently at **InnovationM**, I build real-time AI interview engines, voice chat
 
 ---
 
-## 💼 What I've Shipped
+## 💼 Experience
 
-### @ InnovationM *(Mar 2024 – Present)*
-- **Real-time AI Interview Engine** — WebSocket-driven bidirectional audio (STT/TTS) with 16kHz PCM16 processing, auto-reconnect logic, and advanced proctoring (tab/app switching detection). Reduced question delivery latency by ~40% across 50+ concurrent sessions.
-- **AI Voice Chatbots for HR** — 3 production chatbots using LangChain + OpenAI GPT-4 with RAG architecture, automating 200+ daily queries and cutting manual HR effort by 40%.
-- **RAG Document Q&A System** — LangChain + FAISS pipeline processing 50+ documents with 90% retrieval accuracy and real-time response generation.
-- **Enterprise UI Optimization** — Lazy loading, code splitting, and memoization lifted Lighthouse scores from 62 → 85+ and improved render speed by 35%.
+### Software Engineer – Frontend · InnovationM, Noida *(Mar 2024 – Present)*
+- Architected modular React.js component library, consolidating 15+ legacy pages and eliminating ~30% duplicated code, saving 1–2 days per sprint
+- Engineered WebSocket real-time interview engine reducing question delivery latency ~40% across 50+ concurrent sessions with auto-reconnect logic
+- Integrated 10+ REST API endpoints for interview lifecycle, submissions, and automated evaluation triggers
+- Optimized rendering via lazy loading, code splitting, and memoization — improved page load by ~35% and Lighthouse performance score from 62 to 85+
+- Resolved 30+ production UI defects, collaborating with QA and product stakeholders to reduce frontend support tickets by ~25%
+- Delivered bi-weekly Agile sprint releases in a cross-functional team of 6–8, documenting APIs and defining shared backend data contracts
 
-### @ Klimb *(May 2023 – Mar 2024)*
-- **B2B SaaS Recruitment Platform** — Scaled to 500+ monthly active users with React.js + Node.js microservices; maintained 99.9% uptime through 3× traffic spikes.
-- **Executive Analytics Dashboards** — Real-time dashboards processing 10,000+ data points daily, contributing to 20% revenue growth.
-- **API Performance** — Redis caching reduced API response times from 800ms → 250ms (70% improvement).
+### Full Stack Engineer · Klimb *(May 2023 – Mar 2024)*
+- Developed React.js dashboards for a B2B SaaS hiring platform serving 500+ monthly active users with 99.5% uptime
+- Built a reusable UI component library of 20+ components, reducing new-feature development time by ~25% across 8+ dashboard modules
+- Created RESTful APIs using Node.js and Express.js to automate candidate workflow transitions, eliminating 3–4 hours of manual data entry per week
+- Streamlined client-side data fetching with request caching and debounced queries, cutting redundant API calls ~30% and load time from 3.2s to 2.1s
+- Facilitated zero-downtime CI/CD deployments across dev, staging, and production environments using Git-based release workflows
 
 ---
 
