@@ -24,7 +24,7 @@ Currently at **InnovationM**, I build real-time AI interview engines, voice chat
 🏢  Software Engineer @ InnovationM, Noida
 🤖  Building: Multi-Agent Systems · RAG Pipelines · Real-time AI Interfaces
 🎓  IBM Certified Generative AI Engineering Professional
-📍  Noida, India  |  Open to remote & full-time opportunities
+📍  Noida, India  |  Open to full-time opportunities
 ```
 
 ---
