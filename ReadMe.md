@@ -101,8 +101,6 @@ Voice AI             → STT/TTS · WebSocket streaming · real-time audio pipel
 | Generative AI Advance Fine-Tuning for LLMs | IBM | 2025 |
 | Vector Databases for RAG: An Introduction | IBM | 2025 |
 | Data Analysis with Python | IBM | 2025 |
-| Frontend Development | — | — |
-| Backend Development (Node.js) | — | — |
 
 ---
 
