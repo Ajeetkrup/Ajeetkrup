@@ -113,6 +113,55 @@ IBM-certified across RAG, Agents, Fine-tuning, and Transformers.
 
 ## 🚀 Featured AI Projects
 
+### 🔀 Omni-Router — Production LLM Gateway with Semantic Caching & Intent Routing
+> **Stack:** Python · FastAPI · FAISS · Redis · ONNX Runtime · LiteLLM · Groq · ARQ · DeepEval · MLflow
+
+A production-style LLM gateway that combines **semantic caching, intent-based model routing, async quality evaluation, and experiment observability** — designed to minimize latency and cost for simple requests while preserving quality for complex ones.
+
+**⚡ Why It's Fast**
+- **ONNX embeddings on CPU**: Uses `ORTModelForFeatureExtraction` with explicit session thread settings + pure NumPy mean pooling/normalization — fast local vectorization without full PyTorch runtime overhead on every request
+- **Semantic cache before LLM call**: Every request is embedded and searched in FAISS (`IndexFlatIP`); high-similarity queries are served directly from Redis, skipping LLM inference entirely
+- **Two-tier model routing**: Cache misses are classified as `simple` or `complex` — simple routes to **Llama**, complex routes to **Qwen** — keeping average latency/cost low while preserving capability where it matters
+
+**🧠 Training Journey: Model Selection**
+- Built binary intent classifier (`simple` / `complex`) using sentence embeddings from `all-MiniLM-L6-v2`
+- Benchmarked full classifier families: Logistic Regression, SVM, Random Forest, XGBoost, KNN, NearestCentroid, and multiple deep neural network architectures
+- Ran grid-search tuning across all candidates
+- **Chose NearestCentroid for production** — extremely lightweight at inference, stable with embedding-space separation, easy to debug, and operationally simple for low-latency online routing decisions
+- Artifacts serialized via `joblib`: `intent_classification_model.pkl` + `intent_label_encoder.pkl`
+
+**📬 Async Evaluation Pipeline (ARQ + DeepEval)**
+- Evaluation jobs are **enqueued after response is returned** — never blocks user-facing latency
+- Worker runs `AnswerRelevancyMetric` and `ToxicityMetric` independently with failure isolation (one metric failure does not kill the evaluation job)
+- Evaluation signals drive **closed-loop quality monitoring**: detect safety regressions, monitor model drift, and trigger retraining/policy updates — without adding a single millisecond to online inference
+
+**📊 MLflow Observability**
+- **Gateway experiment logs**: model used · route taken · request latency · prompt size
+- **Worker experiment logs**: relevancy score · toxicity score · evaluation duration · judge model · status tags
+- Turns this from a demo into an **auditable optimization system**: compare latency/cost/quality across routing strategies and make release decisions with measurable evidence
+
+**🏗️ Full Architecture Flow**
+```
+Request → ONNX Embedding → FAISS Similarity Search
+              ↓                        ↓
+         Cache Miss            Cache Hit → Redis → Response
+              ↓
+     NearestCentroid Classifier
+         ↙              ↘
+    Simple              Complex
+   (Llama)             (Qwen)
+       ↓                   ↓
+   LiteLLM + Groq Inference
+              ↓
+          Response
+              ↓ (async)
+       ARQ Job Queue → DeepEval → MLflow
+```
+
+[![GitHub](https://img.shields.io/badge/View%20on%20GitHub-121011?style=flat-square&logo=github)](https://github.com/Ajeetkrup)
+
+---
+
 ### 🗂️ DocuMind — Intelligent Multi-Document Q&A
 > **Stack:** Python · LangChain · ChromaDB · Groq · RAGAS · Gradio
 
@@ -140,14 +189,6 @@ IBM-certified across RAG, Agents, Fine-tuning, and Transformers.
 
 - Auto-pipeline: transcript extraction → chunking → embeddings → vector storage → semantic Q&A
 - Live Streamlit app with **sub-2 second** end-to-end query processing
-
----
-
-### 📄 AI Resume Analyzer
-> **Stack:** Python · LangChain · HuggingFace Embeddings · FastAPI
-
-- Semantic NLP pipeline with **85%+ alignment accuracy** on resume–JD benchmarks
-- Structured skill-gap analysis with LLM-generated recommendations
 
 ---
 
