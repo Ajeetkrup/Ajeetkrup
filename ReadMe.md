@@ -167,8 +167,6 @@ Request → ONNX Embedding → FAISS Similarity Search
 
 - Production-grade RAG with **hybrid retrieval** (BM25 + semantic search) to eliminate hallucinations
 - Multi-agent architecture: relevance checker → retriever → grounded response generator
-- Built **RAGAS evaluation pipeline** (faithfulness, recall@k) with automated scoring loops
-- Fine-tuned open-source LLM with **LoRA** on domain-specific Q&A data
 - Supports PDF, DOCX, TXT, Markdown via Docling parser
 
 [![GitHub](https://img.shields.io/badge/View%20on%20GitHub-121011?style=flat-square&logo=github)](https://github.com/Ajeetkrup)
