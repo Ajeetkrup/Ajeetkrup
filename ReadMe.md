@@ -254,7 +254,6 @@ I'm open to **Senior AI Engineer** roles and high-impact **freelance AI projects
 |---|---|
 | 📧 | [ajeetkrup401@gmail.com](mailto:ajeetkrup401@gmail.com) |
 | 💼 | [linkedin.com/in/ajeet-kumar-upadhyay](https://linkedin.com/in/ajeet-kumar-upadhyay) |
-| 🌐 | [portfolio-pink-beta-80.vercel.app](https://portfolio-pink-beta-80.vercel.app/) |
 
 </div>
 
