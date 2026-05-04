@@ -59,6 +59,53 @@ IBM-certified across RAG, Agents, Fine-tuning, and Transformers.
 
 ---
 
+### 🗂️ DocuMind — Production-Minded Agentic RAG for Document Q&A
+
+> **Stack:** Python · FastAPI · LangGraph · LangChain · ChromaDB · BM25 · Groq · ONNX Runtime · RAGAS · Arize Phoenix · React 19 · Vite
+
+**[🌐 Live Demo](https://documind-production-81f2.up.railway.app/)** · [![GitHub](https://img.shields.io/badge/View%20on%20GitHub-121011?style=flat-square&logo=github)](https://github.com/Ajeetkrup)
+
+A full-stack AI system that ingests enterprise-style documents and answers questions using an **adaptive, self-correcting retrieval workflow** — built to show practical engineering depth, not just a chat demo.
+
+**🔀 Agentic Self-Correcting RAG Workflow (LangGraph)**
+
+The QA pipeline is a state machine with explicit, deterministic branching — not a linear chain:
+
+```
+generate_query_or_respond → retrieve → grade_documents
+                                              ↓
+                                    [relevant] → generate_answer
+                                    [weak]     → rewrite_question → retrieve (loop)
+```
+
+**⚙️ Key Engineering Decisions**
+
+| Decision | Why | Impact |
+|----------|-----|--------|
+| LangGraph state machine over linear chains | Needed explicit branching, looping, deterministic transitions | Self-correction + explainable execution flow |
+| Hybrid retriever (dense 0.7 + BM25 0.3) | Dense misses exact terms; BM25 misses semantic paraphrases | Better recall across varied query styles |
+| ChromaDB over Milvus-lite | Milvus-lite not Windows-friendly without Docker | Local persistent vector storage, zero Docker dependency |
+| Metadata filtering before indexing | Docling outputs nested metadata Chroma rejects | Prevents ingestion failures at scale |
+| Explicit anti-injection prompt constraints | Retrieved context is untrusted; can contain adversarial instructions | Safer grading and answer generation |
+| Background RAGAS evaluation | Quality must be measured without blocking user latency | Continuous signal for iterative improvement |
+| Phoenix OTEL instrumentation | Agentic systems need trace-level visibility | Faster diagnosis, safer production iteration |
+
+**🔐 Prompt Injection Guardrails**
+- Retrieved context explicitly marked as `UNTRUSTED` in all prompts
+- Model constrained to ignore any instructions embedded inside documents
+- Applied at both grading and answering stages
+
+**📊 Observability & Evaluation**
+- **Arize Phoenix + OpenTelemetry**: traces capture full agent execution paths including routing decisions and retrieval behavior
+- **RAGAS background eval**: scores `AgentGoalAccuracyWithReference` asynchronously per request — measurable quality loop without latency impact
+
+**🧩 Full-Stack Product UX**
+- Drag-and-drop file upload with ingestion state feedback
+- Document-aware chat gating (forces upload before querying)
+- Markdown response rendering, responsive sidebar/chat layout
+
+---
+
 ### 🔀 Omni-Router — Production LLM Gateway with Semantic Caching & Intent Routing
 > **Stack:** Python · FastAPI · FAISS · Redis · ONNX Runtime · LiteLLM · Groq · ARQ · DeepEval · MLflow
 
@@ -66,7 +113,7 @@ A production-style LLM gateway combining **semantic caching, intent-based model 
 
 **⚡ Architecture Highlights**
 - **ONNX embeddings on CPU**: Uses `ORTModelForFeatureExtraction` with NumPy mean pooling — fast local vectorization without full PyTorch overhead
-- **Semantic cache before LLM call**: Requests are embedded and searched via FAISS (`IndexFlatIP`); high-similarity queries served from Redis, skipping LLM inference entirely
+- **Semantic cache before LLM call**: Requests embedded and searched via FAISS (`IndexFlatIP`); high-similarity queries served from Redis, skipping LLM inference entirely
 - **Two-tier model routing**: Cache misses classified as `simple` or `complex` — simple → **Llama**, complex → **Qwen**
 
 **🧠 Classifier Design**
@@ -100,18 +147,6 @@ Request → ONNX Embedding → FAISS Similarity Search
               ↓ (async)
        ARQ Job Queue → DeepEval → MLflow
 ```
-
-[![GitHub](https://img.shields.io/badge/View%20on%20GitHub-121011?style=flat-square&logo=github)](https://github.com/Ajeetkrup)
-
----
-
-### 🗂️ DocuMind — Intelligent Multi-Document Q&A
-> **Stack:** Python · LangChain · ChromaDB · Groq · RAGAS · Gradio
-
-- **Hybrid retrieval** (BM25 + semantic search) for grounded, hallucination-reduced answers
-- Multi-agent pipeline: relevance checker → retriever → response generator with query rewriting
-- Supports PDF, DOCX, TXT, Markdown via Docling parser
-- Evaluated with RAGAS metrics (faithfulness, answer relevance, context precision)
 
 [![GitHub](https://img.shields.io/badge/View%20on%20GitHub-121011?style=flat-square&logo=github)](https://github.com/Ajeetkrup)
 
