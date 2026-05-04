@@ -1,156 +1,27 @@
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0f,50:0d1b2a,100:1a1a2e&height=160&section=header&text=Ajeet%20Kumar%20Upadhyay&fontSize=42&fontColor=ffffff&fontAlignY=55&desc=AI%20Engineer%20%E2%80%94%20LLMs%20%C2%B7%20RAG%20%C2%B7%20Agentic%20Systems%20%C2%B7%20Voice%20AI%20%C2%B7%20LLM%20Gateways&descAlignY=78&descSize=16&descColor=7dd3fc" />
-
-</div>
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ajeet-kumar-upadhyay)
-[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/Ajeetkrup)
-[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=twitter&logoColor=white)](https://x.com/ajeetkrup401)
-[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:ajeetkrup401@gmail.com)
-
-![Profile Views](https://komarev.com/ghpvc/?username=ajeetkrup&label=Profile%20Views&color=0ea5e9&style=flat)
-
-</div>
-
----
-
-## 🧠 Who I Am
-
-> **Building AI systems where latency, observability, and quality aren't afterthoughts — they're the design.**
-
-I'm an **AI Engineer** specializing in LLM systems, RAG pipelines, agentic architectures, and Voice AI. My engineering instinct is systems-first: I build AI with explicit state machines, measurable quality loops, and trace-level visibility — not black-box chains.
-
-IBM-certified across RAG, Agents, Fine-tuning, and Transformers.
-
-```
-🤖  Specializing in:  Multi-Agent Systems · LLM Gateways · RAG Pipelines · Voice AI
-⚡  Engineering focus: Latency · Semantic Caching · Observability · Eval-Driven Quality
-🎓  IBM Certified: RAG & Agentic AI · Generative AI Engineering Professional
-🏢  AI Projects: Production-grade systems with real metrics — not toy demos
-📍  Noida, India  |  Open to AI / LLM Engineer roles (remote & full-time)
-```
-
----
-
-## 🚀 AI Projects
-
----
-
-### 🗂️ DocuMind — Agentic Self-Correcting RAG for Document Q&A
-
-> **Stack:** Python · FastAPI · LangGraph · LangChain · ChromaDB · BM25 · Groq · ONNX Runtime · RAGAS · Arize Phoenix · React 19 · Vite
-
-**[🌐 Live Demo](https://documind-production-81f2.up.railway.app/)** · [![GitHub](https://img.shields.io/badge/View%20on%20GitHub-121011?style=flat-square&logo=github)](https://github.com/Ajeetkrup)
-
-A full-stack AI system that ingests enterprise documents and answers questions via an **adaptive, self-correcting retrieval workflow** — built with production engineering depth, not a chat wrapper.
-
-**🔀 Agentic Workflow (LangGraph State Machine)**
-
-The QA pipeline is a deterministic state machine with explicit branching — not a linear chain:
-
-```
-generate_query_or_respond → retrieve → grade_documents
-                                              ↓
-                                    [relevant] → generate_answer
-                                    [weak]     → rewrite_question → retrieve (loop)
-```
-
-**⚙️ Key Engineering Decisions**
-
-| Decision | Why | Impact |
-|----------|-----|--------|
-| LangGraph state machine over linear chains | Needed explicit branching, looping, deterministic transitions | Self-correction + explainable execution flow |
-| Hybrid retriever (dense 0.7 + BM25 0.3) | Dense misses exact terms; BM25 misses semantic paraphrases | Better recall across varied query styles |
-| ChromaDB over Milvus-lite | Milvus-lite not Windows-friendly without Docker | Local persistent vector storage, zero Docker dependency |
-| Metadata filtering before indexing | Docling outputs nested metadata Chroma rejects | Prevents ingestion failures at scale |
-| Explicit anti-injection prompt constraints | Retrieved context is untrusted; can carry adversarial instructions | Safer grading and answer generation |
-| Background RAGAS evaluation | Quality must be measured without blocking user latency | Continuous signal for iterative improvement |
-| Phoenix OTEL instrumentation | Agentic systems need trace-level visibility | Faster diagnosis, safer production iteration |
-
-**🔐 Prompt Injection Guardrails**
-- Retrieved context explicitly marked as `UNTRUSTED` in all prompts
-- Model constrained to ignore any instructions embedded inside documents
-- Applied at both grading and answering stages — not just the final generation
-
-**📊 Observability & Evaluation**
-- **Arize Phoenix + OpenTelemetry**: traces capture full agent execution paths including routing decisions, retrieval steps, and grade scores
-- **RAGAS background eval**: scores `AgentGoalAccuracyWithReference` asynchronously per request — measurable quality loop with zero latency impact
-
----
-
-### 🔀 Omni-Router — Production LLM Gateway with Semantic Caching & Intent Routing
-
-> **Stack:** Python · FastAPI · FAISS · Redis · ONNX Runtime · LiteLLM · Groq · ARQ · DeepEval · MLflow
-
 [![GitHub](https://img.shields.io/badge/View%20on%20GitHub-121011?style=flat-square&logo=github)](https://github.com/Ajeetkrup)
-
-A production-style LLM gateway combining **semantic caching, intent-based model routing, async quality evaluation, and experiment observability** — built to minimize latency and cost while preserving quality for complex queries.
-
-**🏗️ Architecture Flow**
-```
-Request → ONNX Embedding → FAISS Similarity Search
-              ↓                        ↓
-         Cache Miss            Cache Hit → Redis → Response
-              ↓
-     NearestCentroid Classifier
-         ↙              ↘
-    Simple              Complex
-   (Llama)             (Qwen)
-       ↓                   ↓
-   LiteLLM + Groq Inference
-              ↓
-          Response
-              ↓ (async, zero latency impact)
-       ARQ Job Queue → DeepEval → MLflow
-```
-
-**⚡ Architecture Highlights**
-
-| Component | Implementation | Reasoning |
-|-----------|---------------|-----------|
-| Embeddings | ONNX + `ORTModelForFeatureExtraction` + NumPy mean pooling | Fast CPU vectorization without full PyTorch overhead |
-| Semantic cache | FAISS `IndexFlatIP` + Redis | High-similarity hits skip LLM inference entirely |
-| Intent classifier | NearestCentroid on `all-MiniLM-L6-v2` embeddings | Lightweight at inference; benchmarked against LR, SVM, RF, XGBoost, KNN |
-| Async eval | ARQ job queue → DeepEval | Zero latency impact on response path |
-| Observability | MLflow: route taken, model used, latency, prompt size, relevancy, toxicity | Full audit trail for drift detection |
-
-**🧠 Classifier Design**
-- Built binary intent classifier using sentence embeddings
-- Benchmarked: Logistic Regression, SVM, Random Forest, XGBoost, KNN, NearestCentroid, and deep neural architectures
-- **Chose NearestCentroid**: lightweight at inference, stable with embedding-space separation, interpretable decision boundary
-
-**📬 Async Evaluation Pipeline**
-- `AnswerRelevancyMetric` and `ToxicityMetric` evaluated via ARQ workers after response is returned
-- Failure isolation prevents eval crashes from affecting the main request path
-- Drives closed-loop quality monitoring for drift detection and retraining signals
 
 ---
 
 ### 🎙️ Voice AI Assistant — Real-time STT/LLM/TTS Pipeline
-
 > **Stack:** Python · FastAPI · WebSockets · OpenAI · Deepgram
 
-- Sub-300ms round-trip: Deepgram STT → streaming LLM → TTS audio over WebSockets
-- Streaming LLM inference with chunked audio output for sub-perceptual first-byte latency
-- WebSocket architecture designed for concurrent multi-user sessions with session isolation
+- Engineered a sub-300ms round-trip pipeline: Deepgram STT → streaming LLM → TTS audio transmitted over WebSockets.
+- Implemented streaming LLM inference to drastically reduce Time-To-First-Token (TTFT).
+- Built a highly scalable concurrent WebSocket architecture capable of managing dozens of simultaneous voice streams.
 
 ---
 
-### 📺 YouTube Transcript Q&A — RAG over Video Content
-
+### 📺 Video Content Q&A — Automated RAG Pipeline
 > **Stack:** Python · LangChain · ChromaDB · Groq · Streamlit
 
-- Auto-pipeline: transcript extraction → semantic chunking → embeddings → vector storage → Q&A
-- Sub-2s end-to-end query processing on live Streamlit app
+- Developed a hands-free ingestion pipeline: automatic transcript extraction → semantic chunking → vector embeddings → persistent vector storage.
+- Achieved sub-2 second end-to-end query processing for semantic retrieval against large video datasets.
 
 ---
 
 ## 🛠️ Technical Stack
 
-### 🤖 LLM & Agentic Frameworks
+### 🤖 Generative AI & Agents
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
@@ -165,25 +36,44 @@ Request → ONNX Embedding → FAISS Similarity Search
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B35?style=flat-square&logoColor=white)
 ![BM25](https://img.shields.io/badge/BM25%20Hybrid-6366F1?style=flat-square&logoColor=white)
 
-### 🎙️ Voice & Real-time AI
+### 🎙️ Audio Processing & Realtime Systems
 ![Deepgram](https://img.shields.io/badge/Deepgram-101010?style=flat-square&logoColor=white)
 ![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=flat-square&logo=socket.io&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat-square&logo=fastapi)
 
-### ⚙️ ML Engineering & Evaluation
+### ⚙️ Machine Learning Engineering
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat-square&logo=PyTorch&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat-square&logo=scikit-learn&logoColor=white)
-![ONNX](https://img.shields.io/badge/ONNX%20Runtime-005CED?style=flat-square&logoColor=white)
 ![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white)
-![RAGAS](https://img.shields.io/badge/RAGAS-22C55E?style=flat-square&logoColor=white)
-![DeepEval](https://img.shields.io/badge/DeepEval-8B5CF6?style=flat-square&logoColor=white)
-![Arize Phoenix](https://img.shields.io/badge/Arize%20Phoenix-F97316?style=flat-square&logoColor=white)
+![RAGAS](https://img.shields.io/badge/RAGAS%20Eval-22C55E?style=flat-square&logoColor=white)
 
-### ☁️ Infra & Backend
+### ☁️ Infrastructure & Data
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat-square&logo=amazon-aws&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-%230db7ed.svg?style=flat-square&logo=docker&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-%23DC382D.svg?style=flat-square&logo=redis&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=flat-square&logo=postgresql&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-6DA55F?style=flat-square&logo=node.js&logoColor=white)
+
+---
+
+## 💼 Professional Experience
+
+**🏢 Software Engineer — InnovationM** *(Mar 2024 – Present)*
+
+Engineering real-time data systems and AI-integrated capabilities for enterprise applications:
+- Architected a **WebSocket-based real-time engine** — reduced pipeline latency by 40%, securely handling 150+ concurrent daily data streams.
+- Integrated **Speech-to-Text inference engines** into internal platforms, reducing HR process resolution times by 40% over 200+ daily requests.
+- Maintained strict code quality and latency optimizations across highly scalable architectures.
+
+**🏢 Software Engineer — Klimb.io** *(May 2023 – Mar 2024)*
+
+- Designed and implemented a **distributed Redis caching layer** — dropping average API response times from 800ms down to 250ms (a 68% performance gain).
+- Scaled backend microservices to smoothly handle traffic spikes of **500+ concurrent connections** while maintaining strict 99.9% availability.
+- Engineered data aggregation pipelines capable of processing 10,000+ complex analytics events daily.
+
+**🏢 Teaching Assistant — Coding Ninjas** *(Oct 2022 – Feb 2023)*
+
+- Instructed and mentored 100+ students in advanced Data Structures, Algorithms, and system architecture.
 
 ---
 
@@ -192,9 +82,9 @@ Request → ONNX Embedding → FAISS Similarity Search
 | Certification | Issuer | Year |
 |---|---|---|
 | **RAG and Agentic AI Professional** | IBM / Coursera | 2025 |
-| Specializations: RAG, Vector DBs, Multimodal AI, Agents, LangChain, LangGraph, CrewAI, AutoGen | | |
+| Specializations: Vector DBs, Multimodal AI, Agents, LangGraph, CrewAI | | |
 | **Generative AI Engineering Professional** | IBM / Coursera | 2025 |
-| Specializations: Prompt Engineering, LLM Apps, Transformers, NLP, Fine-tuning | | |
+| Specializations: Prompt Engineering, LLM Apps, Transformers, Fine-tuning | | |
 | Generative AI Language Modeling with Transformers | IBM | 2025 |
 | Generative AI Advanced Fine-Tuning for LLMs | IBM | 2025 |
 | Vector Databases for RAG: An Introduction | IBM | 2025 |
@@ -202,15 +92,15 @@ Request → ONNX Embedding → FAISS Similarity Search
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Analytics
 
 <div align="center">
 
-![](https://github-readme-stats.vercel.app/api?username=ajeetkrup&theme=dark&hide_border=true&include_all_commits=true&count_private=true)
+![](https://github-readme-stats.vercel.app/api?username=ajeetkrup&theme=midnight-purple&hide_border=true&include_all_commits=true&count_private=true)
 
-![](https://github-readme-streak-stats.herokuapp.com/?user=ajeetkrup&theme=dark&hide_border=true)
+![](https://github-readme-streak-stats.herokuapp.com/?user=ajeetkrup&theme=midnight-purple&hide_border=true)
 
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=ajeetkrup&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact&hide=javascript,typescript,css,html)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=ajeetkrup&theme=midnight-purple&hide_border=true&include_all_commits=true&count_private=true&layout=compact)
 
 </div>
 
@@ -225,7 +115,7 @@ I.K. Gujral Punjab Technical University · 2019–2023 · **CGPA: 8.67 / 10**
 
 ## 📫 Let's Connect
 
-Open to **AI Engineer / LLM Engineer** roles and high-impact AI projects.
+Open to **AI Engineer / LLM Engineer** roles.
 
 <div align="center">
 
@@ -240,8 +130,39 @@ Open to **AI Engineer / LLM Engineer** roles and high-impact AI projects.
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:0d1b2a,100:0a0a0f&height=100&section=footer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=100Here is the revised, pure AI Engineer version of your GitHub profile README. All mentions of frontend frameworks (React, Next.js, etc.), UI transitions, and the "frontend to AI" narrative have been completely scrubbed to position you solidly as a backend-focused AI Engineer. 
+```markdown
+<div align="center">
 
-*"State machines over chains. Metrics over vibes. Traces over guesses."*
+<img src="[https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=160&section=header&text=Ajeet%20Kumar%20Upadhyay&fontSize=42&fontColor=ffffff&fontAlignY=55&desc=AI%20Engineer%20%E2%80%94%20LLMs%20%C2%B7%20RAG%20%C2%B7%20Voice%20AI%20%C2%B7%20Agentic%20Systems&descAlignY=78&descSize=16&descColor=a78bfa](https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=160&section=header&text=Ajeet%20Kumar%20Upadhyay&fontSize=42&fontColor=ffffff&fontAlignY=55&desc=AI%20Engineer%20%E2%80%94%20LLMs%20%C2%B7%20RAG%20%C2%B7%20Voice%20AI%20%C2%B7%20Agentic%20Systems&descAlignY=78&descSize=16&descColor=a78bfa)" />
 
 </div>
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ajeet-kumar-upadhyay)
+[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/Ajeetkrup)
+[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=twitter&logoColor=white)](https://x.com/ajeetkrup401)
+[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:ajeetkrup401@gmail.com)
+
+![Profile Views](https://komarev.com/ghpvc/?username=ajeetkrup&label=Profile%20Views&color=7c3aed&style=flat)
+
+</div>
+
+---
+
+## 🧠 Who I Am
+
+> **Building scalable, low-latency AI systems.**  
+> LLMs · Agentic Workflows · RAG Pipelines · Real-time Voice AI
+
+I am an **AI Engineer** specializing in complex LLM systems, highly accurate RAG pipelines, and agentic architectures. I approach AI with a strict software engineering mindset: latency matters, caching is essential, and observability is non-negotiable. I focus on building deterministic, production-grade intelligence layers rather than simple chat wrappers.
+
+IBM-certified across RAG, Agents, Fine-tuning, and Transformers.
+
+```text
+🏢  AI Engineer building scalable intelligent systems
+🤖  Focus: Multi-Agent Systems · Voice AI · RAG Pipelines · LLM Gateways
+⚡  Approach: Semantic Caching · Latency-aware architecture · Asynchronous Evaluation
+🎓  IBM Certified: RAG & Agentic AI · Generative AI Engineering Professional
+📍  Noida, India | Open to AI/LLM Engineer roles (remote & full-time)
