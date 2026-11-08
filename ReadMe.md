@@ -1,17 +1,12 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0f,50:0d1b2a,100:1a1a2e&height=160&section=header&text=Ajeet%20Kumar%20Upadhyay&fontSize=42&fontColor=ffffff&fontAlignY=55&desc=AI%20Engineer%20%E2%80%94%20LLMs%20%C2%B7%20RAG%20%C2%B7%20Agentic%20Systems%20%C2%B7%20Voice%20AI%20%C2%B7%20LLM%20Gateways&descAlignY=78&descSize=16&descColor=7dd3fc" />
-
-</div>
-
-<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0f,50:0d1b2a,100:1a1a2e&height=150&section=header&text=Ajeet%20Kumar%20Upadhyay&fontSize=38&fontColor=ffffff&fontAlignY=55&desc=AI%20Engineer%20%E2%80%94%20LLM%20Systems%20%C2%B7%20Routing%20%C2%B7%20Graph%20RAG%20%C2%B7%20Agentic%20Workflows&descAlignY=78&descSize=15&descColor=7dd3fc" />
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ajeet-kumar-upadhyay)
 [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/Ajeetkrup)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Ajeet--001-blue)](https://huggingface.co/Ajeet-001)
 [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=twitter&logoColor=white)](https://x.com/ajeetkrup401)
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:ajeetkrup401@gmail.com)
-
-![Profile Views](https://komarev.com/ghpvc/?username=ajeetkrup&label=Profile%20Views&color=0ea5e9&style=flat)
 
 </div>
 
@@ -19,207 +14,83 @@
 
 ## 🧠 Who I Am
 
-> **Building AI systems where latency, observability, and quality aren't afterthoughts — they're the design.**
+> **Building production AI systems where latency budgets, deterministic routing, and eval loops come first.**
 
-I'm an **AI Engineer** specializing in LLM systems, RAG pipelines, agentic architectures, and Voice AI. My engineering instinct is systems-first: I build AI with explicit state machines, measurable quality loops, and trace-level visibility — not black-box chains.
+I am an **AI Engineer with 3+ years of experience** designing and deploying production AI systems: set-equivariant model routing, self-correcting Graph RAG, structured document extraction, and real-time voice/WebSocket pipelines.
 
-IBM-certified across RAG, Agents, Fine-tuning, and Transformers.
-
-```
-🤖  Specializing in:  Multi-Agent Systems · LLM Gateways · RAG Pipelines · Voice AI
-⚡  Engineering focus: Latency · Semantic Caching · Observability · Eval-Driven Quality
-🎓  IBM Certified: RAG & Agentic AI · Generative AI Engineering Professional
-🏢  AI Projects: Production-grade systems with real metrics — not toy demos
-📍  Noida, India  |  Open to AI / LLM Engineer roles (remote & full-time)
-```
+- ⚡ **Model & Systems Engineering:** Author of [`gemmarouter`](https://github.com/Ajeetkrup/gemmarouter) (custom 11.6M set-equivariant decision head on EmbeddingGemma 2).
+- 📉 **Measurable Business Impact:** Reduced LLM costs by **60%** at Febi.ai, cut analyst effort by **85%** at InnovationM, and dropped API latencies by **68%** at Klimb.io.
+- 🎓 **IBM Certified:** RAG & Agentic AI Professional · Generative AI Engineering Professional.
+- 📍 **Noida, India** | Open to AI Engineer / LLM Systems roles.
 
 ---
 
-## 🚀 AI Projects
+## 🚀 Featured Engineering Projects
+
+### ⚡ [gemmarouter — Set-Equivariant Decision & Tool Router](https://github.com/Ajeetkrup/gemmarouter)
+[![GitHub](https://img.shields.io/badge/View%20Repo-121011?style=flat-square&logo=github)](https://github.com/Ajeetkrup/gemmarouter)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Model%20Weights-Ajeet--001%2Fembeddinggemma2--decision--router-yellow?style=flat-square)](https://huggingface.co/Ajeet-001/embeddinggemma2-decision-router)
+> **Stack:** PyTorch · Hugging Face · EmbeddingGemma 2 · Set Transformer · Python SDK & CLI
+
+Official SDK & model head (`Ajeet-001/embeddinggemma2-decision-router`) for tool selection, intent dispatch, and agent routing:
+- **Architecture:** 11.6M-parameter `SetEquivariantDecisionHead` operating on frozen 271M `google/embeddinggemma-2` embeddings.
+- **Zero-Latency Option Caching:** Caches candidate vectors in memory — live requests require only **1 query encode + ~1.6ms GPU pass** (~7–12ms CPU).
+- **Exact 0.00% Order Sensitivity:** Permutation-invariant 2-layer Set Transformer guarantees identical decisions regardless of option order.
+- **Calibrated Abstention:** 6-feature Null Gate automatically abstains (`decision=None`) on out-of-scope or adversarial queries (`P(null) >= 0.58`), preventing hallucinated tool triggers.
+- **Circuit-Breaker Dispatch:** Includes `@router.tool` decorator for automatic dispatch and native CLI playground.
 
 ---
 
-### 🗂️ DocuMind — Agentic Self-Correcting RAG for Document Q&A
+### 📑 [DocuMind — Contract Risk & Graph RAG Intelligence](https://github.com/Ajeetkrup/Documind)
+[![GitHub](https://img.shields.io/badge/View%20Repo-121011?style=flat-square&logo=github)](https://github.com/Ajeetkrup/Documind)
+> **Stack:** Python · FastAPI · LangGraph · Qdrant · Memgraph · Groq · Docling · RAGAS · Arize Phoenix · React
 
-> **Stack:** Python · FastAPI · LangGraph · LangChain · ChromaDB · BM25 · Groq · ONNX Runtime · RAGAS · Arize Phoenix · React 19 · Vite
-
-**[🌐 Live Demo](https://documind-production-81f2.up.railway.app/)** · [![GitHub](https://img.shields.io/badge/View%20on%20GitHub-121011?style=flat-square&logo=github)](https://github.com/Ajeetkrup)
-
-A full-stack AI system that ingests enterprise documents and answers questions via an **adaptive, self-correcting retrieval workflow** — built with production engineering depth, not a chat wrapper.
-
-**🔀 Agentic Workflow (LangGraph State Machine)**
-
-The QA pipeline is a deterministic state machine with explicit branching — not a linear chain:
-
-```
-generate_query_or_respond → retrieve → grade_documents
-                                              ↓
-                                    [relevant] → generate_answer
-                                    [weak]     → rewrite_question → retrieve (loop)
-```
-
-**⚙️ Key Engineering Decisions**
-
-| Decision | Why | Impact |
-|----------|-----|--------|
-| LangGraph state machine over linear chains | Needed explicit branching, looping, deterministic transitions | Self-correction + explainable execution flow |
-| Hybrid retriever (dense 0.7 + BM25 0.3) | Dense misses exact terms; BM25 misses semantic paraphrases | Better recall across varied query styles |
-| ChromaDB over Milvus-lite | Milvus-lite not Windows-friendly without Docker | Local persistent vector storage, zero Docker dependency |
-| Metadata filtering before indexing | Docling outputs nested metadata Chroma rejects | Prevents ingestion failures at scale |
-| Explicit anti-injection prompt constraints | Retrieved context is untrusted; can carry adversarial instructions | Safer grading and answer generation |
-| Background RAGAS evaluation | Quality must be measured without blocking user latency | Continuous signal for iterative improvement |
-| Phoenix OTEL instrumentation | Agentic systems need trace-level visibility | Faster diagnosis, safer production iteration |
-
-**🔐 Prompt Injection Guardrails**
-- Retrieved context explicitly marked as `UNTRUSTED` in all prompts
-- Model constrained to ignore any instructions embedded inside documents
-- Applied at both grading and answering stages — not just the final generation
-
-**📊 Observability & Evaluation**
-- **Arize Phoenix + OpenTelemetry**: traces capture full agent execution paths including routing decisions, retrieval steps, and grade scores
-- **RAGAS background eval**: scores `AgentGoalAccuracyWithReference` asynchronously per request — measurable quality loop with zero latency impact
+Enterprise legal intelligence engine that resolves cross-document contract links and clause precedence:
+- **Hybrid Retrieval:** Blends semantic dense search (Qdrant) with graph traversal (Memgraph) to trace which amendments override base agreements.
+- **Self-Correcting Agent:** Deterministic LangGraph state machine grades retrieved context, rewrites weak queries, and self-corrects prior to generation.
+- **Production Observability:** Background RAGAS evaluation for goal accuracy without user blocking; OpenTelemetry + Arize Phoenix tracing for full agent execution paths.
 
 ---
 
-### 🔀 Omni-Router — Production LLM Gateway with Semantic Caching & Intent Routing
+### 🔀 [Omni-Router — Production LLM Gateway & Semantic Caching](https://github.com/Ajeetkrup/Omni-Router)
+[![GitHub](https://img.shields.io/badge/View%20Repo-121011?style=flat-square&logo=github)](https://github.com/Ajeetkrup/Omni-Router)
+> **Stack:** Python · FastAPI · FAISS · Redis · ONNX Runtime · LiteLLM · ARQ · DeepEval · MLflow
 
-> **Stack:** Python · FastAPI · FAISS · Redis · ONNX Runtime · LiteLLM · Groq · ARQ · DeepEval · MLflow
-
-[![GitHub](https://img.shields.io/badge/View%20on%20GitHub-121011?style=flat-square&logo=github)](https://github.com/Ajeetkrup)
-
-A production-style LLM gateway combining **semantic caching, intent-based model routing, async quality evaluation, and experiment observability** — built to minimize latency and cost while preserving quality for complex queries.
-
-**🏗️ Architecture Flow**
-```
-Request → ONNX Embedding → FAISS Similarity Search
-              ↓                        ↓
-         Cache Miss            Cache Hit → Redis → Response
-              ↓
-     NearestCentroid Classifier
-         ↙              ↘
-    Simple              Complex
-   (Llama)             (Qwen)
-       ↓                   ↓
-   LiteLLM + Groq Inference
-              ↓
-          Response
-              ↓ (async, zero latency impact)
-       ARQ Job Queue → DeepEval → MLflow
-```
-
-**⚡ Architecture Highlights**
-
-| Component | Implementation | Reasoning |
-|-----------|---------------|-----------|
-| Embeddings | ONNX + `ORTModelForFeatureExtraction` + NumPy mean pooling | Fast CPU vectorization without full PyTorch overhead |
-| Semantic cache | FAISS `IndexFlatIP` + Redis | High-similarity hits skip LLM inference entirely |
-| Intent classifier | NearestCentroid on `all-MiniLM-L6-v2` embeddings | Lightweight at inference; benchmarked against LR, SVM, RF, XGBoost, KNN |
-| Async eval | ARQ job queue → DeepEval | Zero latency impact on response path |
-| Observability | MLflow: route taken, model used, latency, prompt size, relevancy, toxicity | Full audit trail for drift detection |
-
-**🧠 Classifier Design**
-- Built binary intent classifier using sentence embeddings
-- Benchmarked: Logistic Regression, SVM, Random Forest, XGBoost, KNN, NearestCentroid, and deep neural architectures
-- **Chose NearestCentroid**: lightweight at inference, stable with embedding-space separation, interpretable decision boundary
-
-**📬 Async Evaluation Pipeline**
-- `AnswerRelevancyMetric` and `ToxicityMetric` evaluated via ARQ workers after response is returned
-- Failure isolation prevents eval crashes from affecting the main request path
-- Drives closed-loop quality monitoring for drift detection and retraining signals
+Cost- and latency-optimized gateway routing incoming prompts between lightweight and reasoning models:
+- **Sub-ms Semantic Caching:** FAISS `IndexFlatIP` + Redis over ONNX-quantized embeddings (`all-MiniLM-L6-v2`) skips inference on repeat/semantically similar queries.
+- **Lightweight Intent Classifier:** NearestCentroid classifier splits queries into Simple (Llama) vs. Complex (Qwen) with minimal CPU overhead.
+- **Asynchronous Eval Pipeline:** ARQ worker queues run DeepEval (relevancy & toxicity) and log metrics to MLflow out-of-band with zero response latency penalty.
 
 ---
 
-### 🎙️ Voice AI Assistant — Real-time STT/LLM/TTS Pipeline
+## 💼 Work Experience
 
-> **Stack:** Python · FastAPI · WebSockets · OpenAI · Deepgram
+#### **AI Engineer** — *Febi.ai* `(Jul 2026 – Nov 2026)`
+- **60% Cost Reduction:** Re-architected multi-page invoice extraction into a unified single LLM pipeline with page-level fallbacks, slashing API calls and network overhead.
+- **Hybrid OCR & QR Engine:** Integrated RapidOCR and QR decoding to extract critical GSTIN, IRN, and invoice numbers deterministically before model fallback.
+- **Multi-Tenant Data Sync:** Built company-specific server dispatch pipelines with database-backed vendor prefill for missing fields.
 
-- Sub-300ms round-trip pipeline: Deepgram STT → streaming LLM → TTS audio transmitted over WebSockets
-- Streaming LLM inference with chunked audio output to minimize Time-To-First-Token (TTFT)
-- Concurrent WebSocket architecture with session isolation, capable of handling dozens of simultaneous voice streams
+#### **Software Engineer (AI)** — *InnovationM* `(Mar 2024 – May 2026)`
+- **Autonomous Research Agent:** Developed multi-source supplier profiling agents with LangChain/LangGraph, reducing manual analyst time by **85%**.
+- **Real-Time Voice AI:** Engineered FastAPI + WebSocket streaming engine with Deepgram STT, supporting **150+ concurrent live interview sessions** at 40% lower latency.
+- **Policy Graph RAG:** Built Neo4j knowledge graph RAG over internal enterprise manuals with OpenTelemetry and Arize Phoenix tracing.
 
----
-
-### 📺 Video Content Q&A — Automated RAG Pipeline
-
-> **Stack:** Python · LangChain · ChromaDB · Groq · Streamlit
-
-- Hands-free ingestion pipeline: automatic transcript extraction → semantic chunking → vector embeddings → persistent vector storage
-- Sub-2s end-to-end query processing for semantic retrieval against large video datasets
-
----
-
-## 🛠️ Technical Stack
-
-### 🤖 LLM & Agentic Frameworks
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![CrewAI](https://img.shields.io/badge/CrewAI-FF4500?style=flat-square&logoColor=white)
-![Google ADK](https://img.shields.io/badge/Google%20ADK-4285F4?style=flat-square&logo=google&logoColor=white)
-![Groq](https://img.shields.io/badge/Groq-F55036?style=flat-square&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
-
-### 🔍 RAG & Vector Search
-![FAISS](https://img.shields.io/badge/FAISS-0080FF?style=flat-square&logoColor=white)
-![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=flat-square&logoColor=white)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B35?style=flat-square&logoColor=white)
-![BM25](https://img.shields.io/badge/BM25%20Hybrid-6366F1?style=flat-square&logoColor=white)
-
-### 🎙️ Voice & Real-time AI
-![Deepgram](https://img.shields.io/badge/Deepgram-101010?style=flat-square&logoColor=white)
-![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=flat-square&logo=socket.io&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat-square&logo=fastapi)
-
-### ⚙️ ML Engineering & Evaluation
-![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat-square&logo=PyTorch&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat-square&logo=scikit-learn&logoColor=white)
-![ONNX](https://img.shields.io/badge/ONNX%20Runtime-005CED?style=flat-square&logoColor=white)
-![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white)
-![RAGAS](https://img.shields.io/badge/RAGAS-22C55E?style=flat-square&logoColor=white)
-![DeepEval](https://img.shields.io/badge/DeepEval-8B5CF6?style=flat-square&logoColor=white)
-![Arize Phoenix](https://img.shields.io/badge/Arize%20Phoenix-F97316?style=flat-square&logoColor=white)
-
-### ☁️ Infra & Backend
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat-square&logo=amazon-aws&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-%230db7ed.svg?style=flat-square&logo=docker&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-%23DC382D.svg?style=flat-square&logo=redis&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=flat-square&logo=postgresql&logoColor=white)
+#### **Full Stack Developer** — *Klimb.io* `(May 2023 – Mar 2024)`
+- **Latency Optimization:** Architected Redis caching layer, lowering average API response times from **800ms to 250ms (68% drop)**.
+- **Scale:** Engineered high-throughput PostgreSQL analytics pipelines handling 10,000+ daily events with 99.9% uptime.
 
 ---
 
-## 💼 Professional Experience
-
-**🏢 Software Engineer — InnovationM** *(Mar 2024 – Present)*
-
-Engineering real-time data systems and AI-integrated capabilities for enterprise applications:
-- Architected a **WebSocket-based real-time engine** — reduced pipeline latency by 40%, handling 150+ concurrent daily data streams
-- Integrated **Speech-to-Text inference engines** into internal platforms, reducing HR process resolution times by 40% across 200+ daily requests
-- Maintained strict latency budgets and observability standards across high-throughput system architectures
-
-**🏢 Software Engineer — Klimb.io** *(May 2023 – Mar 2024)*
-
-- Designed a **distributed Redis caching layer** — dropped average API response times from 800ms to 250ms (68% gain)
-- Scaled backend services to handle **500+ concurrent connections** at 99.9% availability through 3x traffic spikes
-- Engineered data aggregation pipelines processing 10,000+ analytics events daily with virtualized rendering
-
-**🏢 Teaching Assistant — Coding Ninjas** *(Oct 2022 – Feb 2023)*
-
-- Mentored 100+ students in Data Structures, Algorithms, and system design
+## 🛠️ Technical Skills
+AI & Modeling : Transformers, LangGraph, LangChain, Tool Calling, LoRA/QLoRA Fine-Tuning, Structured Outputs Vector & Graph DB : Qdrant, Memgraph, Neo4j, ChromaDB, FAISS, Pinecone, BM25 Hybrid Search Eval & Tracing : RAGAS, DeepEval, Arize Phoenix, OpenTelemetry, MLflow, Langfuse Backend & Infra : Python, FastAPI, WebSockets, PyTorch, ONNX Runtime, Redis, PostgreSQL, Docker, Kubernetes
 
 ---
 
-## 🏅 Certifications
+## 🏅 Certifications & Education
 
-| Certification | Issuer | Year |
-|---|---|---|
-| **RAG and Agentic AI Professional** | IBM / Coursera | 2025 |
-| Specializations: RAG, Vector DBs, Multimodal AI, Agents, LangChain, LangGraph, CrewAI, AutoGen | | |
-| **Generative AI Engineering Professional** | IBM / Coursera | 2025 |
-| Specializations: Prompt Engineering, LLM Apps, Transformers, NLP, Fine-tuning | | |
-| Generative AI Language Modeling with Transformers | IBM | 2025 |
-| Generative AI Advanced Fine-Tuning for LLMs | IBM | 2025 |
-| Vector Databases for RAG: An Introduction | IBM | 2025 |
-| Data Analysis with Python | IBM | 2025 |
+- **IBM Professional Certification:** RAG & Agentic AI (Specialized in LangGraph, CrewAI, Vector DBs, Multi-Agent Systems)
+- **IBM Professional Certification:** Generative AI Engineering (Transformers, LLM Architecture, Fine-Tuning)
+- **B.Tech in Computer Science & Engineering:** I.K. Gujral Punjab Technical University (2019–2023) — **CGPA: 8.67 / 10**
 
 ---
 
@@ -228,40 +99,13 @@ Engineering real-time data systems and AI-integrated capabilities for enterprise
 <div align="center">
 
 ![](https://github-readme-stats.vercel.app/api?username=ajeetkrup&theme=dark&hide_border=true&include_all_commits=true&count_private=true)
-
 ![](https://github-readme-streak-stats.herokuapp.com/?user=ajeetkrup&theme=dark&hide_border=true)
 
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=ajeetkrup&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact&hide=javascript,typescript,css,html)
-
-</div>
-
----
-
-## 🎓 Education
-
-**B.Tech — Computer Science & Engineering**
-I.K. Gujral Punjab Technical University · 2019–2023 · **CGPA: 8.67 / 10**
-
----
-
-## 📫 Let's Connect
-
-Open to **AI Engineer / LLM Engineer** roles and high-impact AI projects.
-
-<div align="center">
-
-| | |
-|---|---|
-| 📧 | [ajeetkrup401@gmail.com](mailto:ajeetkrup401@gmail.com) |
-| 💼 | [linkedin.com/in/ajeet-kumar-upadhyay](https://linkedin.com/in/ajeet-kumar-upadhyay) |
-
 </div>
 
 ---
 
 <div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:0d1b2a,100:0a0a0f&height=100&section=footer" />
 
 *"State machines over chains. Metrics over vibes. Traces over guesses."*
 
